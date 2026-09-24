@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound Commands</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 0.7rem 0.9rem;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-family: monospace;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Sound Commands</h1>
+    <ul id="command-list"></ul>
+  </main>
 <script>
   const commands = [
     "!2hourslater,!2hl",
@@ -140,3 +188,5 @@
     commandList.appendChild(listItem);
   });
 </script>
+</body>
+</html>
